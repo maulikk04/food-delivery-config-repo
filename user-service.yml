@@ -1,1 +1,4 @@
-message: "Hello from GitHub Config!"
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
