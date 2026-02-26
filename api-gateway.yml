@@ -15,6 +15,8 @@ spring:
               uri: lb://restaurant-service
               predicates:
                 - Path=/api/restaurants/**
+              filters:
+                - AuthenticationFilter
             - id: order-service
               uri: lb://order-service
               predicates:
