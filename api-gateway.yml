@@ -19,3 +19,5 @@ spring:
               uri: lb://order-service
               predicates:
                 - Path=/api/orders/**
+              filters:
+                - AuthenticationFilter
